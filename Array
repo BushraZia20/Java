@@ -1,0 +1,52 @@
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Array {
+    public static void main(String[] args){
+        //array - 1d
+        //      - 2d
+        //wrp to display or store top 10 students
+        /*
+        datatype[] variable;
+        datatype variable[];
+        datatype []variable;
+
+
+
+         datatype[] variable = new datatype[];  //user input
+         */
+
+//        int[] nums = new int[5];
+//        nums[0] = 6;
+//        nums[1] = 8;
+//        nums[2] = 9;
+//        nums[3] = 10;
+//        nums[4] = 26;
+//
+//        // int[] nums = {6,8,9,10,26};   nums.legth  =size of array
+//
+//        for (int i = 0; i < nums.length; i++) {
+//            System.out.println(nums[i]);
+////        System.out.println(nums[4]);
+//
+//
+//        }
+//        System.out.println(Arrays.toString(nums));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the num of std:");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        //input mark for each std
+        for(int i =0 ;i<arr.length;i++) {
+            arr[i] = sc.nextInt();
+        }
+        //Display their marks in the array
+        //System.out.println("marks stored in the array : ");
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+
+
+    }
+}
